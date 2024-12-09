@@ -1,10 +1,12 @@
 'use client'
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Link from 'next/link';
 import { ShoppingCart } from 'lucide-react';
+import CartContext from '@/context/CartContext';
 import Cart from './Cart';
 
 export default function Navbar() {
+  const crtCntxt = useContext(CartContext);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   function toggleCart() {
@@ -28,6 +30,7 @@ export default function Navbar() {
         >
           <ShoppingCart />
           <span>Cart</span>
+          <span>{crtCntxt.items.length}</span>
         </button>
       </div>
 
