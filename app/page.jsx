@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
+import Hero from '@/app/UI/Hero';
 import ProductCard from '@/components/ProductCard';
 import Footer from '@/components/Footer';
 
