@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex space-x-8">
           <Link href="/" className="hover:text-gray-400">Home</Link>
           <Link href="/About" className="hover:text-gray-400">About</Link>
-          <Link href="/store" className="hover:text-gray-400">Store</Link>
+          <Link href="/Store" className="hover:text-gray-400">Store</Link>
         </div>
 
         {/* Cart Button */}
